@@ -3,6 +3,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import GainersBlock from "components/GainersBlock";
 import LosersBlock from "components/LosersBlock";
+import VolumeBlock from "components/VolumeBlock";
+import LiquidityBlock from "components/LiquidityBlock";
 
 const Swap: NextPage = (props) => {
     
@@ -15,6 +17,8 @@ const Swap: NextPage = (props) => {
                 <div className="flex">
                     <GainersBlock/>
                     <LosersBlock/>
+                    <VolumeBlock/>
+                    <LiquidityBlock/>
                 </div>
             </div>
         </div>
