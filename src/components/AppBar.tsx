@@ -19,8 +19,9 @@ export const AppBar: React.FC = () => {
       {/* NavBar / Header */}
       <div className="navbar flex h-20 flex-row md:mb-2 shadow-lg bg-black text-neutral-content border-b border-zinc-600 bg-opacity-66">
         <div className="navbar-start align-items-center">
-          <div className="hidden sm:inline w-22 h-22 md:p-2 ml-10">
-            <p> AlphaSwap </p>
+          <div className="flex items-center inline w-22 h-22 md:p-2 ml-10">
+            <img width="40" height="40" src="https://img.icons8.com/ios-filled/50/FFFFFF/alpha.png" alt="alpha"/>
+            <p className='font-bold text-xl ml-2 mb-1'> AlphaSwap </p>
           </div>
           <WalletMultiButtonDynamic className="btn-ghost btn-sm relative flex md:hidden text-lg " />
         </div>
