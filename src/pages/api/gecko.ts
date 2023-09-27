@@ -15,12 +15,13 @@ export default async (req, res) => {
         h24: item.attributes.price_change_percentage.h24,
         baseTokenId: item.relationships.base_token.data.id.replace('solana_', ''),
         quoteTokenId: item.relationships.quote_token.data.id.replace('solana_', ''),
+        liquidity: parseFloat(item.attributes.reserve_in_usd),
       }));
 
       // Remove duplicates based on 'name' property
       const uniqueData = extractedData.filter(
         (item, index, self) =>
-          index === self.findIndex((t) => t.name === item.name)
+          index === self.findIndex((t) => t.name === item.name) && item.liquidity > 5000
       );
       
       uniqueData.sort((a, b) => b.h24 - a.h24);
