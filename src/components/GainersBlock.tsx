@@ -45,7 +45,7 @@ const GainersBlock = () => {
     };
 
     return (
-        <div className="my-4 mx-6 rounded-2xl p-4 flex flex-col bg-gray-800 h-[170px]">
+        <div className="my-4 rounded-2xl p-4 flex flex-col bg-gray-800 h-[170px]">
             <div className="mb-2 flex items-center justify-start">
                 <div className="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7ed321" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

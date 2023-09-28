@@ -45,7 +45,7 @@ const LosersBlock = () => {
     };
 
     return (
-        <div className="my-4 mx-6 rounded-2xl p-4 flex flex-col bg-gray-800 h-[170px]">
+        <div className="mx-4 my-4 rounded-2xl p-4 flex flex-col bg-gray-800 h-[170px]">
             <div className="mb-2 flex items-center justify-start">
                 <div className="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d0021b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 17.2l-7.7-7.7-4 4-5.7-5.7"/><path d="M15 18h6v-6"/></svg>

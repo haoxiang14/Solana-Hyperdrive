@@ -45,7 +45,7 @@ const VolumeBlock = () => {
     };
 
     return (
-        <div className="my-4 mx-6 rounded-2xl p-4 flex flex-col bg-gray-800 h-[170px]">
+        <div className="my-4 rounded-2xl p-4 flex flex-col bg-gray-800 h-[170px]">
             <div className="flex flex-col justify-between flex-grow">
                 <div className="mb-2 flex items-center justify-start">
                     <div className="flex items-center">

@@ -14,7 +14,7 @@ const Swap: NextPage = (props) => {
                 <Head>
                     <title>AlphaSwap</title>
                 </Head>
-                <div className="flex">
+                <div className="flex mx-12">
                     <GainersBlock/>
                     <LosersBlock/>
                     <VolumeBlock/>
