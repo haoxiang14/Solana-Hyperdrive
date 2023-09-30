@@ -34,9 +34,11 @@ AlphaSwap extends a dedicated space for users to monitor and analyze their walle
 ### **👀 Vision & Solution 👀**
 
 *Vision*
+
 Empower individuals globally to effortlessly and securely access, trade, and manage a diverse range of cryptocurrencies in Solana using local currencies, fostering financial inclusion and enhancing the future of decentralized finance.
 
 *Solution*
+
 AlphaSwap is dedicated to simplifying the cryptocurrency experience by providing an intuitive platform for seamless cryptocurrency transactions, comprehensive analytics, and portfolio management. 
 
 
