@@ -11,30 +11,30 @@ AlphaSwap is a decentralized exchange that allows you to trade crypto assets on 
 
 1. Lack of Accessibility to Cryptocurrencies using Local Currencies
 
-Through this platform, users can seamlessly acquire or sell cryptocurrencies, such as Solana, using DuitNow, one of Malaysia's widely utilized money transfer methods.
+    Through this platform, users can seamlessly acquire or sell cryptocurrencies, such as Solana, using DuitNow, one of Malaysia's widely utilized money transfer methods.
 
 2. Insufficient Insights into Solana Pool Performance
 
-The absence of comprehensive and easily accessible on-chain analytics for Solana pools leaves users uninformed about critical metrics like gainers, losers, volume, and liquidity. This knowledge gap hampers users' ability to make informed investment and trading decisions on the Solana network.
+    The absence of comprehensive and easily accessible on-chain analytics for Solana pools leaves users uninformed about critical metrics like gainers, losers, volume, and liquidity. This knowledge gap hampers users' ability to make informed investment and trading decisions on the Solana network.
 
 3. Complexity in Swapping Cryptocurrencies
 
-The existing cryptocurrency trading platforms lack user-friendly interfaces and seamless processes for individuals to easily swap their funds from one cryptocurrency to another.
+    The existing cryptocurrency trading platforms lack user-friendly interfaces and seamless processes for individuals to easily swap their funds from one cryptocurrency to another.
 
 
 *Solution*
 
 1. On/ Off Ramp with local currencies
 
-AlphaSwap facilitates convenient cryptocurrency transactions using various local currencies, prominently including the Malaysian Ringgit (MYR). Through this platform, users can seamlessly acquire or sell cryptocurrencies, such as Solana, using DuitNow, one of Malaysia's widely utilized money transfer methods.
+    AlphaSwap facilitates convenient cryptocurrency transactions using various local currencies, prominently including the Malaysian Ringgit (MYR). Through this platform, users can seamlessly acquire or sell cryptocurrencies, such as Solana, using DuitNow, one of Malaysia's widely utilized money transfer methods.
 
 2. Analytics Swap
 
-AlphaSwap offers comprehensive on-chain Solana pool analytics, empowering users with crucial insights into the Solana pool's performance. This encompasses data on gainers, losers, volume, and liquidity. By just clicking on a specific pair on the analytics board, users can efficiently execute fund swaps.
+    AlphaSwap offers comprehensive on-chain Solana pool analytics, empowering users with crucial insights into the Solana pool's performance. This encompasses data on gainers, losers, volume, and liquidity. By just clicking on a specific pair on the analytics board, users can efficiently execute fund swaps.
 
 3. Portfolio Analytics
 
-AlphaSwap extends a dedicated space for users to monitor and analyze their wallet's performance. By logging into the platform with their wallet, users can effortlessly track and assess their cryptocurrency portfolio, enabling informed decision-making.
+    AlphaSwap extends a dedicated space for users to monitor and analyze their wallet's performance. By logging into the platform with their wallet, users can effortlessly track and assess their cryptocurrency portfolio, enabling informed decision-making.
 
 
 ### **👀 Vision & Solution 👀**
