@@ -150,8 +150,9 @@ const TokenMenu = () => {
  
   return (
     <div>
-      <PieChartComponent solanaPrice={solPrice} solanaAmount={solBalance} tokenPrices={tokenBalances} tokenAmounts={tokenBalances} />
-      <div className="tabs">
+      <PieChartComponent />
+      {/* <PieChartComponent solanaPrice={solPrice} solanaAmount={solBalance} tokenPrices={tokenBalances} tokenAmounts={tokenBalances} /> */}
+      <div className="tabs mt-4">
         <a
           className={`font-bold text-white hover:text-gray-300 tab tab-lifted ${activeTab === 0 ? 'tab-active' : ''}`}
           onClick={() => handleTabClick(0)}
@@ -181,6 +182,15 @@ const TokenMenu = () => {
                         </tr>
                     </thead>
                     <tbody>
+                        <tr className="hover">
+                        <th> <img src={"https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/So11111111111111111111111111111111111111112/logo.png"} alt="Avatar" className="w-6 h-6 rounded-full" /></th>
+                        <th> Solana </th>
+                        <th> SOL </th>
+                        <th> {solBalance !== null ? solBalance.toFixed(4) : 'Loading...'} </th>
+                        <th> {solPrice !== null ? `$${(solPrice * solBalance).toFixed(2)}` : 'Loading...'} </th>
+                        </tr>
+                    </tbody>
+                    <tbody>
                         {updatedTokenBalances
                         .filter((token) => token.tokenAmount.decimals !== 0 && token.tokenAmount.uiAmount !== 0)
                         .map((token, index) => (
@@ -199,15 +209,7 @@ const TokenMenu = () => {
                             </tr>
                         ))}
                     </tbody>
-                    <tbody>
-                        <tr className="hover">
-                        <th> <img src={"https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/So11111111111111111111111111111111111111112/logo.png"} alt="Avatar" className="w-6 h-6 rounded-full" /></th>
-                        <th> Solana </th>
-                        <th> SOL </th>
-                        <th> {solBalance !== null ? solBalance.toFixed(4) : 'Loading...'} </th>
-                        <th> {solPrice !== null ? `$${(solPrice * solBalance).toFixed(2)}` : 'Loading...'} </th>
-                        </tr>
-                    </tbody>
+
                     
                 </table>
             </div>
