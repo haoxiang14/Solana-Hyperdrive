@@ -46,7 +46,7 @@ export const AppBar: React.FC = () => {
             navigationStarts={() => setIsNavOpen(false)}
           />
           <NavElement
-            label="Wallet"
+            label="Portfolio"
             href="/wallet"
             navigationStarts={() => setIsNavOpen(false)}
           />

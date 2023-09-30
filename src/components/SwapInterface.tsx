@@ -25,7 +25,6 @@ const SwapInterface = ({ selectedTokens, setSelectedTokens }) => {
     }, [])
 
     useEffect(() => {
-        console.log('cibai', selectedTokens)
         if (!tokens || selectedTokens.length !== 2) return
         setToken1(tokens.filter((e) => e.symbol.toLowerCase() === selectedTokens[0].toLowerCase())[0])
         setToken2(tokens.filter((e) => e.symbol.toLowerCase() === selectedTokens[1].toLowerCase())[0])
