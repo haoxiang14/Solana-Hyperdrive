@@ -1,10 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import TokenMenu from "components/TokenMenu";
-interface Token {
-
-
-}
 
 const Wallet: NextPage = (props) => {
   return (
@@ -12,12 +8,15 @@ const Wallet: NextPage = (props) => {
       <Head>
         <title>AlphaSwap</title>
       </Head>
-      <div className="items-center">
-        <TokenMenu/>
+      <div>
+        <TokenMenu />
       </div>
     </div>
-
+   
   );
 };
 
 export default Wallet;
+
+// className="flex flex-col items-center justify-start bg-gray-800"
+// className="w-full max-w-md p-5"

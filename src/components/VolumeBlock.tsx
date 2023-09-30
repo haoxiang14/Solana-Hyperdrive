@@ -7,7 +7,7 @@ interface Token {
 
 const ITEMS_PER_PAGE = 3;
 
-const VolumeBlock = () => {
+const VolumeBlock = ({setSelectedTokens}) => {
     
     const [tokenData, setTokenData] = useState<Token[] | null>(null);
     const [currentPage, setCurrentPage] = useState(0);
@@ -44,8 +44,12 @@ const VolumeBlock = () => {
         setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages - 1));
     };
 
+    const setTokens = (tokens) => {
+        setSelectedTokens(tokens.split(' / '))
+    }
+
     return (
-        <div className="my-4 rounded-2xl p-4 flex flex-col bg-gray-800 h-[170px]">
+        <div className="my-4 rounded-2xl p-4 flex flex-col bg-gray-800 h-[170px] w-[343px]">
             <div className="flex flex-col justify-between flex-grow">
                 <div className="mb-2 flex items-center justify-start">
                     <div className="flex items-center">
@@ -74,7 +78,7 @@ const VolumeBlock = () => {
                         >
                             <table className="mb-2 w-full text-sm text-gray-400">
                                 <tr key={index}>
-                                    <td style={{ width: '200px', textAlign: 'left' }}>
+                                    <td style={{ width: '200px', textAlign: 'left' }} onClick={() => setTokens(token.name)}>
                                         {currentPage * ITEMS_PER_PAGE + index + 1}. {token.name}
                                     </td>
                                     <td className="text-right text-white"> {token.volume} USD</td>
