@@ -115,21 +115,21 @@ const SwapInterface = ({ selectedTokens, setSelectedTokens }) => {
             </div>
             </div>
         </div>
-        <div className="bg-white dark:bg-v2-background rounded-2xl backdrop-blur-[20px] p-4 shadow-swap2-light dark:shadow-swap2-dark">
+        <div className="bg-gray-700 dark:bg-v2-background rounded-2xl backdrop-blur-[20px] p-4 shadow-swap2-light dark:shadow-swap2-dark">
             <form>
             <div className="flex-col space-y-2 relative">
                 <div className="flex justify-between">
                     <label className="text-sm font-medium text-black/90 dark:text-white">You're paying</label>
                     <div className="flex space-x-2"></div>
                 </div>
-                <div className="p-4 h-[72px] border border-transparent relative bg-[#EFF0F0] dark:bg-v2-background-dark rounded-xl flex flex-col space-y-3 group focus-within:border-v2-primary/50 focus-within:shadow-swap-input-dark">
+                <div className="p-4 h-[72px] border border-transparent relative bg-gray-800 dark:bg-v2-background-dark rounded-xl flex flex-col space-y-3 group focus-within:border-v2-primary/50 focus-within:shadow-swap-input-dark">
                     <div className="flex">
                         <div className="flex justify-between items-center group/select">
                         <button type="button" 
                         onClick={() => {
                             setIsOpen(true)
                         }}
-                        className="py-2 px-3 h-10 rounded-xl flex space-x-3 items-center bg-white dark:bg-v2-background border dark:group-hover/select:border-v2-primary/50 dark:group-hover/select:bg-[rgba(199,242,132,0.2)] dark:group-hover/select:shadow-swap-input-dark border-transparent">
+                        className="py-2 px-3 h-10 rounded-xl flex space-x-3 items-center bg-gray-700 dark:bg-v2-background border dark:group-hover/select:border-v2-primary/50 dark:group-hover/select:bg-[rgba(199,242,132,0.2)] dark:group-hover/select:shadow-swap-input-dark border-transparent">
                             <div className="w-6 h-6 text-xs flex items-center justify-center rounded-full">
                                 <span className="relative">
                                     {token1 && (
@@ -137,7 +137,7 @@ const SwapInterface = ({ selectedTokens, setSelectedTokens }) => {
                                     )}
                                 </span>
                             </div>
-                            <div className="font-semibold text-sm text-black" translate="no">
+                            <div className="font-semibold text-sm text-white" translate="no">
                                 {token1 && token1.symbol}
                             </div>
                             <div className="text-black/25 dark:text-white/25 group-hover/select:text-[#00D1DF] dark:group-hover/select:text-v2-primary fill-current">
@@ -158,7 +158,7 @@ const SwapInterface = ({ selectedTokens, setSelectedTokens }) => {
                 <div className="relative flex justify-center">
                     <hr className="absolute w-full border-jupiter-input-light dark:border-[rgba(25,35,45,0.35)] top-[calc(50%-1px)] -z-0"/>
                     <div className="inline-block z-10">
-                        <button type="button" className="group/flip bg-[#EBEFF1] dark:bg-v2-background w-8 h-8 rounded-full cursor-pointer flex flex-col justify-center border-[3px] dark:border-[rgba(25,35,45,0.75)] dark:text-white-25 dark:hover:border-v2-primary dark:hover:shadow-swap-input-dark">
+                        <button type="button" className="group/flip bg-gray-700 dark:bg-v2-background w-8 h-8 rounded-full cursor-pointer flex flex-col justify-center border-[3px] dark:border-[rgba(25,35,45,0.75)] dark:text-white-25 dark:hover:border-v2-primary dark:hover:shadow-swap-input-dark">
                         <span className="w-full text-white/50 fill-current flex justify-center transition-none group-hover/flip:text-v2-primary/50 dark:group-hover/flip:text-v2-primary">
                             <svg width="21" height="22" viewBox="0 0 21 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.51043 7.47998V14.99H7.77043V7.47998L9.66043 9.36998L10.5505 8.47994L7.5859 5.51453C7.3398 5.26925 6.94114 5.26925 6.69504 5.51453L3.73047 8.47994L4.62051 9.36998L6.51043 7.47998Z" fill="currentColor"></path>
@@ -180,7 +180,7 @@ const SwapInterface = ({ selectedTokens, setSelectedTokens }) => {
                             setSelectedTokens((old)=> [...old.reverse(), 'PLACEHOLDER'])
                             setIsOpen(true)
                         }}
-                        className="py-2 px-3 h-10 rounded-xl flex space-x-3 items-center bg-white dark:bg-v2-background border dark:group-hover/select:border-v2-primary/50 dark:group-hover/select:bg-[rgba(199,242,132,0.2)] dark:group-hover/select:shadow-swap-input-dark border-transparent">
+                        className="py-2 px-3 h-10 rounded-xl flex space-x-3 items-center bg-gray-700 dark:bg-v2-background border dark:group-hover/select:border-v2-primary/50 dark:group-hover/select:bg-[rgba(199,242,132,0.2)] dark:group-hover/select:shadow-swap-input-dark border-transparent">
                             <div className="w-6 h-6 text-xs flex items-center justify-center rounded-full">
                                 <span className="relative">
                                     {token2 && (
@@ -188,7 +188,7 @@ const SwapInterface = ({ selectedTokens, setSelectedTokens }) => {
                                     )}
                                 </span>
                             </div>
-                            <div className="font-semibold text-sm text-black" translate="no">
+                            <div className="font-semibold text-sm text-white" translate="no">
                                 {token2 && token2.symbol}
                             </div>
                             <div className="text-black/25 dark:text-white/25 group-hover/select:text-[#00D1DF] dark:group-hover/select:text-v2-primary fill-current">
@@ -208,7 +208,11 @@ const SwapInterface = ({ selectedTokens, setSelectedTokens }) => {
             </div>
             <div className="!bg-transparent css-1lpgtt2">
                 <button className="mt-3 h-full w-full rounded-xl text-white group bg-none bg-[#141519] dark:bg-[#121D28] hover:bg-gradient-to-r from-[rgba(199,242,132,1))] to-[rgba(0,190,240,1)] border border-transparent dark:hover:border dark:hover:border-v2-primary disabled:cursor-not-allowed">
-                    <div className="rounded-xl bg-v2-text-gradient dark:bg-[rgba(18,29,40,1)] bg-clip-text text-transparent group-disabled:bg-none group-disabled:text-opacity-25 group-disabled:text-[#CFF3FF] py-5 text-lg font-medium leading-none"><span>Connect Wallet</span></div>
+                    <div className="rounded-xl bg-v2-text-gradient dark:bg-[rgba(18,29,40,1)] bg-clip-text text-transparent group-disabled:bg-none group-disabled:text-opacity-25 group-disabled:text-[#CFF3FF] py-5 text-lg font-medium leading-none">
+                        <span className="text-white font-bold">
+                            Swap
+                        </span>
+                    </div>
                 </button>
             </div>
             </form>
